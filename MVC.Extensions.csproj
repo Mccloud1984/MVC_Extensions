@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MVC.Extensions</RootNamespace>
     <AssemblyName>MVC.Extensions</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CMWME_4.7, Version=4.7.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalReferences\CMWME_4.7.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\WMEReportsWebsite\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -127,12 +131,12 @@
     <None Include="MVC_Extensions.csproj.vsspell" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
+  <!--<ItemGroup>
     <ProjectReference Include="..\..\CMWMELibrary\CMWME_Lib\CMWME_Lib.csproj">
       <Project>{92260c36-0d9d-4922-940f-ff84235da988}</Project>
       <Name>CMWME_Lib</Name>
     </ProjectReference>
-  </ItemGroup>
+  </ItemGroup>-->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
